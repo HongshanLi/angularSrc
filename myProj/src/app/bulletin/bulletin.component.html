@@ -1,0 +1,10 @@
+<div class = "row">
+  <div class = "col-md-5" style="width:1000px; left:10%;">
+    <!-- loop through all threads on one paper,
+    then loop through all papers-->
+    <app-threads-on-paper *ngFor="let thread of newThreads" [thread]="thread"></app-threads-on-paper>
+  </div>
+  <div class="col-md-7">
+    <router-outlet></router-outlet>
+  </div>
+</div>
